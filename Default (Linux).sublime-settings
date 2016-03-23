@@ -1,0 +1,12 @@
+{
+	"draw_white_space": "none",
+	"font_face": "cousine",
+	"font_size": 10,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"smart_indent": true,
+	"tab_size": 2,
+	"translate_tabs_to_spaces": true
+}

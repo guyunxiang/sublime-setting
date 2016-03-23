@@ -1,0 +1,82 @@
+[
+	// 删除行
+	{
+		"keys": ["ctrl+d"],
+		"command": "run_macro_file",
+		"args": {
+			"file": "Packages/Default/Delete Line.sublime-macro"
+		}
+	},
+	// 上下行互换
+	{
+		"keys": ["alt+up"],
+		"command": "swap_line_up"
+	}, {
+		"keys": ["alt+down"],
+		"command": "swap_line_down"
+	},
+	//向左缩进
+	{
+		"keys": ["shift+tab"],
+		"command": "unindent"
+	},
+	// 查找/替换
+	{
+		"keys": ["ctrl+f"],
+		"command": "show_panel",
+		"args": {
+			"panel": "replace",
+			"reverse": false
+		}
+	},
+	// 代码格式化
+	{
+		"keys": ["ctrl+shift+f"],
+		"command": "js_format",
+		"context": [{
+			"key": "selector",
+			"operator": "equal",
+			"operand": "source.js,source.json"
+		}]
+	},
+	// emmet 兼容 jsx 文件
+	{
+		"keys": [
+			"ctrl+e"
+		],
+		"args": {
+			"action": "expand_abbreviation"
+		},
+		"command": "run_emmet_action",
+		"context": [{
+			"key": "emmet_action_enabled.expand_abbreviation"
+		}]
+	}, {
+		"keys": ["tab"],
+		"command": "expand_abbreviation_by_tab",
+		"context": [{
+			"operand": "source.js",
+			"operator": "equal",
+			"match_all": true,
+			"key": "selector"
+		}, {
+			"key": "preceding_text",
+			"operator": "regex_contains",
+			"operand": "(\\b(a\\b|div|span|p\\b|button)(\\.\\w*|>\\w*)?([^}]*?}$)?)",
+			"match_all": true
+		}, {
+			"key": "selection_empty",
+			"operator": "equal",
+			"operand": true,
+			"match_all": true
+		}]
+	},
+	// 单行注释
+	{
+		"keys": ["ctrl+/"],
+		"command": "toggle_comment",
+		"args": {
+			"block": false,
+		}
+	}
+]
