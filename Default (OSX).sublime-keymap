@@ -1,7 +1,15 @@
-[{
-  "keys": ["command+d"],
-  "command": "run_macro_file",
-  "args": {
-    "file": "res://Packages/Default/Delete Line.sublime-macro"
+[
+  // 删除行
+  {
+    "keys": ["command+d"],
+    "command": "run_macro_file",
+    "args": {
+      "file": "res://Packages/Default/Delete Line.sublime-macro"
+    }
+  },
+  // 复制当前行
+  {
+    "keys": ["super+alt+down"],
+    "command": "duplicate_line"
   }
-}, ]
+]

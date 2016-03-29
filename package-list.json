@@ -1,5 +1,5 @@
 {
   "tag": "html代码格式化",
-  "AutoFileName": "自动提示文件名",
-  "html-css-js-format": ""
+  "AutoFileName": "自动提示文件名(sublime text 3 3083以上版本不支持)",
+  "html-css-js-format": "html/css/js代码格式化"
 }

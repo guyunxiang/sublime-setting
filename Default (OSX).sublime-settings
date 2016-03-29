@@ -1,6 +1,8 @@
 {
+  "update_check":false,
   "font_size": 14,
-  "ignored_packages":[
+  "ignored_packages":
+  [
     "Vintage"
   ],
   "tab_size": 2,
