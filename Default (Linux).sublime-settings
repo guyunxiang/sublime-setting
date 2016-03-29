@@ -1,4 +1,5 @@
 {
+	"auto_indent": true,
 	"draw_white_space": "none",
 	"font_face": "cousine",
 	"font_size": 10,
@@ -8,5 +9,6 @@
 	],
 	"smart_indent": true,
 	"tab_size": 2,
-	"translate_tabs_to_spaces": true
+	"translate_tabs_to_spaces": true,
+	"update_check":false
 }
